@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: 60px 1fr 40px;
+    grid-template-columns: 0px 1fr;
+    grid-template-areas:
+        "navbar navbar"
+        "sidebar main"
+        "footer footer";
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+
+nav .logo {
+    height: 90px;
+    width: auto;
+}
+
+/* Right-aligned button in nav */
+.nav-right input[type="submit"] {
+    background-color: #cddef1;
+    color: #070707;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 150px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-right input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Navigation Bar */
+nav {
+      grid-area: navbar;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* spreads logo left, button right */
+    padding: 0 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+/* Sidebar */
+aside {
+    grid-area: sidebar;
+    background-color: #f1f3f5;
+    padding: 20px;
+}
+
+/* Main Content */
+main {
+    grid-area: main;
+    padding: 40px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    gap: 40px;
+}
+
+/* Text Section */
+.container {
+    display: flex;
+    flex-direction: row;          /* ensures side-by-side layout */
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    gap: 40px;
+}
+
+.content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 150px;
+    text-align: center;
+    border-radius: 40%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Image Section */
+.img_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.venus-image {
+    width: 200px;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    background-color: #f1f3f5;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
